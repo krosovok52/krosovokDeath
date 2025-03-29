@@ -1,0 +1,32 @@
+messages:
+  death-title: "§x§f§f§0§a§a§c══════&7[ &cСмерть игрока &7]§x§f§f§0§a§a§c══════"
+  admin-kill: "&6Администратор: &f{killer}"
+  killer: "&6Убийца: &f{killer}"
+  cause: "&6Причина: &f{cause}"
+  player: "&6Игрок: &d{player}"
+  coordinates: "&6Координаты: &f{coords}"
+  world: "&6Мир: &f{world}"
+  time: "&6Время: &f{time}" # поменять часовой пояс в timezone
+  separator: "§x§f§f§0§a§a§c════════════════════════════"
+
+timezone: "Europe/Moscow"  # Доступные зоны: https://www.joda.org/joda-time/timezones.html
+
+notifications:
+  enabled: true
+  permission: "krosovokdeath.notify"
+  sound:
+    enabled: true
+    type: "ENTITY_LIGHTNING_BOLT_THUNDER"
+    pitch: 1.0
+    volume: 1.0
+
+death-commands:
+  enabled: true
+  delay-ticks: 60 # 1 секунда (20 тиков)
+  commands:
+    - "msg {player} Вы умерли!"
+    - "msg {player} Test"
+
+logging:
+  enabled: true
+  format: "vertical" # или "compact" для одной строки

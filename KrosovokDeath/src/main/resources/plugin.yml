@@ -1,0 +1,21 @@
+name: KrosovokDeath
+version: '${project.version}'
+main: ru.krosovok.krosovokdeath.KrosovokDeath
+api-version: '1.16'
+description: Плагин для уведомления админов о смертях игроков + логирование каждой смерти
+permissions:
+  krosovokdeath.notify:
+    description: Получать уведомления о смертях
+    default: op
+  krosovokdeath.toggle:
+    description: Разрешает переключать уведомления
+    default: op
+  krosovokdeath.reload:
+    description: Разрешает перезагрузку конфига
+    default: op
+
+commands:
+  kdeath:
+    description: Управление плагином смертей
+    usage: /kdeath [reload|toggle|help]
+    aliases: [kd]
